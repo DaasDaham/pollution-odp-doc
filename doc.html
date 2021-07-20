@@ -198,7 +198,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     ],
     "https://schema.org/description": [
       {
-        "@value": "<p>This ontology is an attempt at a ODP designed to model Pollution. Pollution can be defined as \"Disequilibrium condition from equilibrium condition in any system\".</p>\n<p>Competency Questions</p>\n<ol>\n<li>What are the contributors responsible for pollution? </li>\n<li>What is the pollutant concentration at a particular time and place? </li>\n<li>What is the trajectory based contributor to the pollution? </li>\n<li>What  are the attributes associated with a trajectory?  </li>\n<li>What are the biological or chemical pollutants in the pollution?</li>\n</ol>"
+        "@value": "<p>This ontology is an attempt at a ODP designed to model Pollution. Pollution can be defined as \"Disequilibrium condition from equilibrium condition in any system\".</p>\n<p>Competency Questions</p>\n<ol>\n<li>What are the contributors responsible for pollution? </li>\n<li>What is the pollutant concentration at a particular time and place? </li>\n<li>What are the carriers that contributed to the pollution? </li>\n<li>What  are the attributes associated with a trajectory?  </li>\n<li>What are the biological or chemical pollutants in the pollution?</li>\n</ol>"
       }
     ],
     "https://schema.org/license": [
@@ -228,7 +228,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <dd><code>https://kracr.iiitd.edu.in/ontology/PollutionODP</code></dd>
         <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/contributor">Contributor</a>(s)</dt>
         <dd>
-            Saad Ahmad, Sudhir Attri, Dr. Raghava Mutharaju; (https://kracr.iiitd.edu.in/)<br/>
+            Saad Ahmad, Sudhir Attri, Raghava Mutharaju; (https://kracr.iiitd.edu.in/)<br/>
         </dd>
         <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/created">Created</a></dt>
         <dd>2021-07-15</dd>
@@ -250,7 +250,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
 <ol>
 <li>What are the contributors responsible for pollution? </li>
 <li>What is the pollutant concentration at a particular time and place? </li>
-<li>What is the trajectory based contributor to the pollution? </li>
+<li>What are the carriers that contributed to the pollution? </li>
 <li>What  are the attributes associated with a trajectory?  </li>
 <li>What are the biological or chemical pollutants in the pollution?</li>
 </ol>
@@ -482,14 +482,14 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="N447510539f1944a3abfce983d1db4f5e">N447510539f1944a3abfce983d1db4f5e</a> <span class="cardinality">some</span> <a href="#Pollution">Pollution</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="N6b737c148e634c25a91abcad83fa6eef">N6b737c148e634c25a91abcad83fa6eef</a> <span class="cardinality">some</span> <a href="#Pollution">Pollution</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#IndirectContributor">IndirectContributor</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#DirectContributor">DirectContributor</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#IndirectContributor">IndirectContributor</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -597,9 +597,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#Carrier">Carrier</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Weather">Weather</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#SocioEconomicFactor">SocioEconomicFactor</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Weather">Weather</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Carrier">Carrier</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -772,9 +772,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
+                    <a href="#BiologicalOrganism">BiologicalOrganism</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#PhysicalPollutant">PhysicalPollutant</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#ChemicalPollutant">ChemicalPollutant</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#BiologicalOrganism">BiologicalOrganism</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -843,7 +843,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="N80a9179e378141dc832d24a5ebfad119">N80a9179e378141dc832d24a5ebfad119</a> <span class="cardinality">only</span> <a href="#Pollutant">Pollutant</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="N94bfaf0b452d4ca486256698b08b8db6">N94bfaf0b452d4ca486256698b08b8db6</a> <span class="cardinality">only</span> <a href="#Pollutant">Pollutant</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -879,9 +879,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#atTime">atTime</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#TimeEntity">TimeEntity</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#atPlace">atPlace</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#PlaceEntity">PlaceEntity</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#atPlace">atPlace</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#PlaceEntity">PlaceEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#atTime">atTime</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#TimeEntity">TimeEntity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -972,8 +972,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasPoint">hasPoint</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasSegment">hasSegment</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasPoint">hasPoint</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1003,18 +1003,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#atTime">atTime</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#TimeEntity">TimeEntity</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#nextPoint">nextPoint</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#carriesPollutant">carriesPollutant</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#Pollutant">Pollutant</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="Nf7a1610a8d444f2999cc03909b5e756a">Nf7a1610a8d444f2999cc03909b5e756a</a> <span class="cardinality">some</span> <a href="#Trajectory">Trajectory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="N1b4ecce6b9364dd8bde4cb1258be77a2">N1b4ecce6b9364dd8bde4cb1258be77a2</a> <span class="cardinality">some</span> <a href="#Trajectory">Trajectory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#atTime">atTime</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#TimeEntity">TimeEntity</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#atPlace">atPlace</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#PlaceEntity">PlaceEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#nextPoint">nextPoint</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#EndingPoint">EndingPoint</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#StartingPoint">StartingPoint</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#EndingPoint">EndingPoint</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1026,10 +1026,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasPoint">hasPoint</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#startsFrom">startsFrom</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#nextPoint">nextPoint</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#endsAt">endsAt</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#nextPoint">nextPoint</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasPoint">hasPoint</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1055,7 +1055,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <td>
                     <a href="#endsAt">endsAt</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#startsFrom">startsFrom</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="Ne25cf4b19f5644319d24a233f457812d">Ne25cf4b19f5644319d24a233f457812d</a> <span class="cardinality">some</span> <a href="#Trajectory">Trajectory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="N2203392ccd6c46728c6e626b8a90a17f">N2203392ccd6c46728c6e626b8a90a17f</a> <span class="cardinality">some</span> <a href="#Trajectory">Trajectory</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#endsAt">endsAt</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#carriesPollutant">carriesPollutant</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#Pollutant">Pollutant</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#startsFrom">startsFrom</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#TrajectoryPoint">TrajectoryPoint</a><sup class="sup-c" title="class">c</sup><br/>
